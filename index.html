@@ -195,142 +195,211 @@
         <h2>Tyre Upsize Calculator</h2>
         <p>Calculate Your Ideal Tyre Size Upgrade with Our Easy-to-Use Tyre Upsize Calculator!</p>
       </div>
-      <table>
-        <tr>
-          <th>Current wheel/tyre</th>
-          <th>New wheel/tyre</th>
-        </tr>
-        <tr>
-          <!-- Current Wheel -->
-          <td>
-            <select name="section1">
-              <option value="145">145</option>
-              <option value="155">155</option>
-              <option value="165">165</option>
-              <option value="175">175</option>
-              <option value="185" selected>185</option>
-              <option value="195">190</option>
-              <option value="195">195</option>
-              <option value="205">205</option>
-              <option value="215">215</option>
-              <option value="225">225</option>
-            </select>
-            /
-            <select name="profile1">
-              <option value="30">30</option>
-              <option value="35">35</option>
-              <option value="40">40</option>
-              <option value="65" selected>65</option>
-              <option value="75">75</option>
-            </select>
-            R
-            <select name="diameter1">
-              <option value="12">12</option>
-              <option value="14" selected>14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-            </select>
-          </td>
+      <form name="wheelsizes" action="tyre_bible.html">
 
-          <!-- New Wheel -->
-          <td>
-            <select name="section2">
-              <option value="145">145</option>
-              <option value="205" selected>205</option>
-              <option value="225">225</option>
-              <option value="235">235</option>
-              <option value="255">255</option>
-            </select>
-            /
-            <select name="profile2">
-              <option value="30">30</option>
-              <option value="35">35</option>
-              <option value="50" selected>50</option>
-              <option value="65">65</option>
-            </select>
-            R
-            <select name="diameter2">
-              <option value="14">14</option>
-              <option value="15" selected>15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-            </select>
-          </td>
-        </tr>
-
-        <!-- Calculate Buttons -->
-        <tr>
-          <td>
-            <button onclick="Calculate1()">Calculate</button>
-          </td>
-          <td>
-            <button onclick="Calculate2()">Calculate</button>
-          </td>
-        </tr>
-
-        <!-- Arrows -->
-        <tr>
-          <td><img src="ASSETS/down-arrow.avif" width="27" height="27" /></td>
-          <td><img src="ASSETS/down-arrow.avif" width="27" height="27" /></td>
-        </tr>
-
-        <!-- Rolling Radius -->
-        <tr>
-          <td>
-            Current RR: <input type="text" name="rollingradius1" size="7" /> mm
-          </td>
-          <td>New RR: <input type="text" name="rollingradius2" size="7" /> mm</td>
-        </tr>
-
-        <!-- Circumference -->
-        <tr>
-          <td>
-            Current Circumference:
-            <input type="text" name="circumference1" size="7" /> mm
-          </td>
-          <td>
-            New Circumference:
-            <input type="text" name="circumference2" size="7" /> mm
-          </td>
-        </tr>
-
-        <!-- Final Calculation -->
-        <tr>
-          <td colspan="2">
-            <img src="ASSETS/down-arrow.avif" width="94" height="39" />
-          </td>
-        </tr>
-
-        <tr>
-          <td colspan="2">
-            <button onclick="Difference()">Click to calculate difference</button>
-          </td>
-        </tr>
-
-        <!-- Final Difference -->
-        <tr>
-          <td colspan="2">
-            Difference in circumference:
-            <input type="text" name="difference" size="8" /> mm or
-            <input type="text" name="differencepercent" size="5" />%
-          </td>
-        </tr>
-
-        <!-- Recommendation -->
-        <tr>
-          <td colspan="2">
-            <b style="color: red; font-size: 1.2rem">Tyrestore recommends an Upsizing only if the difference is less
-              than 2%</b>
-          </td>
-        </tr>
-
-        <tr>
-          <td colspan="2">
-            So when your speedo reads 70mph, you're actually traveling at
-            <input type="text" name="realspeed" size="5" /> mph
-          </td>
-        </tr>
+      </table>
+      <table border=0 align="CENTER">
+          <tr>
+              <th align=CENTER>Current wheel/tyre</th>
+              <th align=CENTER>New wheel/tyre</th>
+          </tr>
+          <tr>
+              <td align=CENTER><select name="section1">
+                      <option value="145">145</option>
+                      <option value="155">155</option>
+                      <option value="165">165</option>
+                      <option value="175">175</option>
+                      <option value="185" selected>185</option>
+                      <option value="195">190</option>
+                      <option value="195">195</option>
+                      <option value="205">205</option>
+                      <option value="215">215</option>
+                      <option value="225">225</option>
+                      <option value="230">230</option>
+                      <option value="235">235</option>
+                      <option value="245">245</option>
+                      <option value="255">255</option>
+                      <option value="265">265</option>
+                      <option value="275">275</option>
+                      <option value="285">285</option>
+                      <option value="295">295</option>
+                      <option value="305">305</option>
+                      <option value="315">315</option>
+                      <option value="325">325</option>
+                      <option value="335">335</option>
+                  </select>
+                  /
+                  <select name="profile1">
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="50">50</option>
+                      <option value="55">55</option>
+                      <option value="60">60</option>
+                      <option value="65" selected>65</option>
+                      <option value="70">70</option>
+                      <option value="75">75</option>
+                      <option value="80">80</option>
+                      <option value="80">82</option>
+                      <option value="85">85</option>
+                      <option value="100">100</option>
+                  </select>
+                  R
+                  <select name="diameter1">
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14" selected>14</option>
+                      <option value="15">15</option>
+                      <option value="15.5">15.5</option>
+                      <option value="16">16</option>
+                      <option value="16.5">16.5</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="19.5">19.5</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                  </select>
+              </td>
+  
+              <td align=CENTER>
+                  <select name="section2">
+                      <option value="145">145</option>
+                      <option value="155">155</option>
+                      <option value="165">165</option>
+                      <option value="175">175</option>
+                      <option value="185">185</option>
+                      <option value="195">190</option>
+                      <option value="195">195</option>
+                      <option value="205" selected>205</option>
+                      <option value="215">215</option>
+                      <option value="225">225</option>
+                      <option value="235">235</option>
+                      <option value="245">245</option>
+                      <option value="255">255</option>
+                      <option value="265">265</option>
+                      <option value="275">275</option>
+                      <option value="285">285</option>
+                      <option value="295">295</option>
+                      <option value="305">305</option>
+                      <option value="315">315</option>
+                      <option value="325">325</option>
+                      <option value="335">335</option>
+                  </select>
+                  /
+                  <select name="profile2">
+                      <option value="30">30</option>
+                      <option value="35">35</option>
+                      <option value="40">40</option>
+                      <option value="45">45</option>
+                      <option value="50" selected>50</option>
+                      <option value="55">55</option>
+                      <option value="60">60</option>
+                      <option value="65">65</option>
+                      <option value="70">70</option>
+                      <option value="75">75</option>
+                      <option value="80">80</option>
+                      <option value="80">82</option>
+                      <option value="85">85</option>
+                      <option value="100">100</option>
+                  </select>
+                  R
+                  <select name="diameter2">
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15" selected>15</option>
+                      <option value="16">16</option>
+                      <option value="16.5">16.5</option>
+                      <option value="17">17</option>
+                      <option value="18">18</option>
+                      <option value="19">19</option>
+                      <option value="19.5">19.5</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+                      <option value="23">23</option>
+                  </select>
+              </td>
+          </tr>
+  
+          <tr>
+              <td align=CENTER>
+                  <input type="button" name="calc1" value="Calculate" class="tyre-button"
+                      onclick="Calculate1(document.wheelsizes.section1.value, document.wheelsizes.profile1.value, document.wheelsizes.diameter1.value)">
+              </td>
+              <td align=CENTER>
+                  <input type="button" name="calc2" value="Calculate" class="tyre-button"
+                      onclick="Calculate2(document.wheelsizes.section2.value, document.wheelsizes.profile2.value, document.wheelsizes.diameter2.value)">
+              </td>
+          </tr>
+  
+          <tr>
+              <td align=CENTER>
+                  <img border="0" src="ASSETS/down-arrow.avif" width="27" height="27">
+              </td>
+              <td align=CENTER>
+                  <img border="0" src="ASSETS/down-arrow.avif" width="27" height="30">
+              </td>
+          </tr>
+  
+          <tr>
+              <td align=CENTER>Current RR:<input type="text" name="rollingradius1" size=7>mm</td>
+              <td align=CENTER>New RR:<input type="text" name="rollingradius2" size=7>mm</td>
+          </tr>
+          <tr>
+              <td align=CENTER>Current circumference:<input type="text" name="circumference1" size=7>mm</td>
+              <td align=CENTER>New circumference:<input type="text" name="circumference2" size=7>mm</td>
+          </tr>
+  
+          <tr>
+              <td colspan=2 align=CENTER>
+                  <img border="0" src="ASSETS/down-arrow.avif" width="94" height="39">
+              </td>
+          </tr>
+  
+          <tr>
+              <td colspan=2 align=CENTER>
+                  <input type="button" name="yo" value="Click to calculate difference" class="tyre-button"
+                      onclick="Difference(document.wheelsizes.circumference1.value, document.wheelsizes.circumference2.value)">
+              </td>
+          </tr>
+  
+          <tr>
+              <td colspan=2 align=CENTER>
+                  <img border="0" src="ASSETS/down-arrow.avif" width="27" height="28">
+              </td>
+          </tr>
+  
+          <tr>
+              <td colspan=2 align=CENTER>
+                  Difference in circumference:<input type="text" name="difference" size=8>mm or <input type="text"
+                      name="differencepercent" size=5>%
+              </td>
+          </tr>
+          <tr>
+              <td colspan=2 align=CENTER>
+                  <B>
+                      <font size="4" color="#FF0000">Tyrestore recommends an Upsizing only if the difference if less than
+                          2%</font>
+                  </b>
+              </td>
+          </tr>
+          <!-- <tr>
+              <td colspan=2 align=CENTER>
+                  &nbsp;</td>
+          </tr> -->
+          <tr>
+              <td colspan=2 align=CENTER>
+                  So when your speedo reads 70mph, you're actually travelling at <input type="text" name="realspeed"
+                      size=5>mph
+              </td>
+          </tr>
+  
+  
       </table>
     </div>
   </section>
@@ -385,7 +454,40 @@
 
   <!--ENQUIRY-->
 
-  
+  <section class="enquiry-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="enquiry-form">
+                    <h2 class="text-center">Enquiry</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter the subject">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-custom px-5 py-2">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
