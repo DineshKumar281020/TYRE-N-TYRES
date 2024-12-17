@@ -1,5 +1,6 @@
 body{
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -96,13 +97,150 @@ body{
     line-height: 1.8;
 }
 
+/*SERVICES*/
+.services-section {
+  padding: 40px 0;
+}
+.services-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.services-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 15px;
+}
+.services-title p {
+  font-size: 1rem;
+  color: #666;
+}
+.service-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  height: 100%;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.service-card-body {
+  padding: 20px;
+  text-align: center;
+}
+.service-card h5 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #212529;
+}
+.service-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/*TYRE UPSIZE CALCULATOR*/
+
+.tyre-section{
+  padding: 40px 0;
+}
+
+.tyre-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tyre-title h2{
+  font-size: 40px;
+  font-weight: bold;
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+.tyre-title p {
+    font-size: 16px;
+    color: #666;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 90%;
+  text-align: center;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+th {
+  background-color: #f2f2f2;
+}
+input[type="text"],
+select {
+  padding: 5px;
+}
+img {
+  margin: 5px;
+}
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  font-size: 14px;
+}
+
+button:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+/*BRANDS*/
+
+.brands-section {
+  padding: 40px 0;
+  text-align: center;
+  background-color: #fff;
+}
+.brands-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #212529;
+}
+.brands-title p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+.brand-logo img {
+  width: 100%;
+  max-width: 150px;
+  height: 80px;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+}
+.brand-logo img:hover {
+  transform: scale(1.1);
+}
+
 
 
 
 
 /*MEDIA QUERIES*/
 
-/* Media Queries */
+/*ABOUT-US*/
 
 /* Up to 1200px */
 @media (max-width: 1200px) {
@@ -143,7 +281,6 @@ body{
       grid-template-columns: 1fr 1fr;
     }
     .about-images img {
-      
       height: 160px;
     }
     .experience-badge {
@@ -162,6 +299,9 @@ body{
     }
     .about-text {
       font-size: 14px;
+    }
+    .navbar-nav{
+      gap: 20px;
     }
   }
   
@@ -213,6 +353,7 @@ body{
     }
     .about-content {
       padding-left: 10px;
+      margin-top: 20px;
     }
     .about-title {
       font-size: 16px;
@@ -238,6 +379,7 @@ body{
     }
     .about-content {
       padding-left: 5px;
+      
     }
     .about-title {
       font-size: 14px;
@@ -249,7 +391,194 @@ body{
       font-size: 11px;
     }
   }
+
+
+  /*SERVICES*/
+
+  /* Up to 1200px */
+@media (max-width: 1200px) {
+  .services-section {
+    padding: 35px 0;
+  }
+  .services-title h2 {
+    font-size: 36px;
+  }
+  .service-card img {
+    height: 180px;
+  }
+  .service-card-body {
+    padding: 15px;
+  }
+  .service-card h5 {
+    font-size: 1.2rem;
+  }
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Up to 992px */
+@media (max-width: 992px) {
+  .services-section {
+    padding: 30px 0;
+  }
+  .services-title h2 {
+    font-size: 32px;
+  }
+  .services-title p {
+    font-size: 0.95rem;
+  }
+  .service-card img {
+    height: 160px;
+  }
+  .service-card h5 {
+    font-size: 1.1rem;
+  }
+  .service-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Up to 768px */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 25px 0;
+  }
+  .services-title {
+    margin-bottom: 30px;
+  }
+  .services-title h2 {
+    font-size: 28px;
+  }
+  .services-title p {
+    font-size: 0.9rem;
+  }
+  .service-card img {
+    height: 150px;
+  }
+  .service-card-body {
+    padding: 10px;
+  }
+  .service-card h5 {
+    font-size: 1rem;
+  }
+  .service-card p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Up to 576px */
+@media (max-width: 576px) {
+  .services-section {
+    padding: 20px 0;
+  }
+  .services-title h2 {
+    font-size: 24px;
+  }
+  .services-title p {
+    font-size: 0.85rem;
+  }
+  .service-card img {
+    height: 140px;
+  }
+  .service-card h5 {
+    font-size: 0.95rem;
+  }
+  .service-card p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Up to 480px */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 15px 0;
+  }
+  .services-title {
+    margin-bottom: 20px;
+  }
+  .services-title h2 {
+    font-size: 20px;
+  }
+  .services-title p {
+    font-size: 0.8rem;
+  }
+  .service-card img {
+    height: 120px;
+  }
+  .service-card h5 {
+    font-size: 0.9rem;
+  }
+  .service-card p {
+    font-size: 0.7rem;
+  }
+}
   
 
+/*TYRE UPSIZE CALCULATOR*/
 
+/* Up to 1200px */
+@media (max-width: 1200px) {
+  .tyre-section {
+    padding: 35px 0;
+  }
+  .tyre-title h2 {
+    font-size: 36px;
+  }
+  .tyre-title p {
+    font-size: 15px;
+  }
+}
+
+/* Up to 992px */
+@media (max-width: 992px) {
+  .tyre-section {
+    padding: 30px 0;
+  }
+  .tyre-title h2 {
+    font-size: 32px;
+  }
+  .tyre-title p {
+    font-size: 14px;
+  }
+}
+
+/* Up to 768px */
+@media (max-width: 768px) {
+  .tyre-section {
+    padding: 25px 0;
+  }
+  .tyre-title h2 {
+    font-size: 28px;
+  }
+  .tyre-title p {
+    font-size: 13px;
+  }
+}
+
+/* Up to 576px */
+@media (max-width: 576px) {
+  .tyre-section {
+    padding: 20px 0;
+  }
+  .tyre-title h2 {
+    font-size: 24px;
+  }
+  .tyre-title p {
+    font-size: 12px;
+  }
+}
+
+/* Up to 480px */
+@media (max-width: 480px) {
+  .tyre-section {
+    padding: 15px 0;
+  }
+  .tyre-title h2 {
+    font-size: 20px;
+  }
+  .tyre-title p {
+    font-size: 11px;
+  }
+}
 
