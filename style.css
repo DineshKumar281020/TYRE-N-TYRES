@@ -225,63 +225,70 @@ select {
 }
 .brand-logo img {
   width: 100%;
-  max-width: 150px;
-  height: 80px;
+  max-width: 250px;
+  height: 100px;
   margin: 0 auto;
   transition: transform 0.3s ease-in-out;
+  object-fit: contain;
 }
 .brand-logo img:hover {
   transform: scale(1.1);
 }
 
-/*ENQUIRY*/
+/*ENQUIRY AND CONTACT US*/
 
-.enquiry-section {
-  background: url('ASSETS/Enquiry-banner.avif') no-repeat center center/cover;
-  position: relative;
-  padding: 100px 0;
-  color: #fff;
-}
-.enquiry-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
+.contact-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 1;
 }
-.enquiry-section .container {
-  position: relative;
-  z-index: 2;
-}
-.enquiry-section h2 {
-  margin-bottom: 20px;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #dc3545;
-  text-transform: uppercase;
-}
-.enquiry-form {
-  background: rgba(255, 255, 255, 0.9);
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-.form-label{
-  color: #000;
-}
-.btn-custom {
+
+.contact-info {
   background-color: #dc3545;
-  color: #ffffff;
-  font-weight: bold;
-  transition: all 0.3s ease;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px 0 0 8px;
 }
-.btn-custom:hover {
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.contact-form {
+  padding: 40px;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #dc3545;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-submit:hover {
   background-color: #000;
   color: #fff;
-  transform: scale(1.05);
 }
 
 /*FOOTER*/
@@ -289,19 +296,8 @@ select {
 .footer {
   background-color: #dc3545;
   color: #ffffff;
-  padding: 40px 0;
+  padding: 20px 0;
   margin: 40px 0 0;
-}
-
-.footer-logo img {
-  max-width: 150px;
-  margin-bottom: 10px;
-}
-
-.footer h6 {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
 }
 
 .footer a {
@@ -324,26 +320,19 @@ select {
   color: #000;
 }
 
-.footer hr {
-  border-color: #ddd;
-}
-
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
 }
 
+.company{
+  margin: 0;
+}
+
 .copyrights{
   text-align: left;
 }
-
-.links{
-  text-align: center;
-}
-
-
-
 
 
 /*MEDIA QUERIES*/
@@ -775,8 +764,8 @@ select {
     font-size: 15px;
   }
   .brand-logo img {
-    max-width: 140px;
-    height: 75px;
+    max-width: 200px;
+    height: 90px;
   }
 }
 
@@ -793,8 +782,8 @@ select {
     margin-bottom: 30px;
   }
   .brand-logo img {
-    max-width: 120px;
-    height: 70px;
+     max-width: 180px;
+    height: 80px;
   }
 }
 
@@ -811,8 +800,8 @@ select {
     margin-bottom: 25px;
   }
   .brand-logo img {
-    max-width: 100px;
-    height: 60px;
+     max-width: 150px;
+    height: 70px;
   }
 }
 
@@ -829,8 +818,8 @@ select {
     margin-bottom: 20px;
   }
   .brand-logo img {
-    max-width: 90px;
-    height: 50px;
+    max-width: 120px;
+    height: 60px;
   }
 }
 
@@ -847,107 +836,106 @@ select {
     margin-bottom: 15px;
   }
   .brand-logo img {
-    max-width: 80px;
-    height: 45px;
+    max-width: 100px;
+    height: 50px;
   }
 }
 
 
-/*ENQUIRY*/
+/*ENQUIRY AND CONTACT US*/
 
 /* Media Queries */
 
 /* Up to 1200px */
 @media (max-width: 1200px) {
-  .enquiry-section {
-    padding: 80px 0;
+  .contact-section {
+    margin: 30px auto;
   }
-  .enquiry-section h2 {
-    font-size: 2.2rem;
-  }
-  .enquiry-form {
+  .contact-info, .contact-form {
     padding: 30px;
+  }
+  .contact-info h2, .contact-form h2 {
+    font-size: 1.8rem;
+  }
+  .btn-submit {
+    font-size: 0.95rem;
   }
 }
 
 /* Up to 992px */
 @media (max-width: 992px) {
-  .enquiry-section {
-    padding: 70px 0;
+  .contact-section {
+    flex-direction: column;
+    box-shadow: none;
   }
-  .enquiry-section h2 {
-    font-size: 2rem;
+  .contact-info {
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    padding: 20px;
   }
-  .enquiry-form {
-    padding: 25px;
+  .contact-form {
+    padding: 20px;
   }
-  .btn-custom {
-    font-size: 0.9rem;
+  .contact-info h2, .contact-form h2 {
+    font-size: 1.6rem;
   }
 }
 
 /* Up to 768px */
 @media (max-width: 768px) {
-  .enquiry-section {
-    padding: 60px 0;
+  .contact-info {
+    font-size: 0.9rem;
   }
-  .enquiry-section h2 {
-    font-size: 1.8rem;
+  .contact-info h2, .contact-form h2 {
+    font-size: 1.4rem;
   }
-  .enquiry-form {
-    padding: 20px;
-  }
-  .btn-custom {
-    font-size: 0.85rem;
-    padding: 8px 12px;
+  .btn-submit {
+    font-size: 0.9rem;
+    padding: 8px 16px;
   }
 }
 
 /* Up to 576px */
 @media (max-width: 576px) {
-  .enquiry-section {
-    padding: 50px 0;
+  .contact-section {
+    margin: 20px auto;
   }
-  .enquiry-section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-  }
-  .enquiry-form {
+  .contact-info {
     padding: 15px;
   }
-  .btn-custom {
-    font-size: 0.8rem;
-    padding: 6px 10px;
+  .contact-info h2, .contact-form h2 {
+    font-size: 1.2rem;
+  }
+  .btn-submit {
+    font-size: 0.85rem;
+    padding: 6px 12px;
   }
 }
 
 /* Up to 480px */
 @media (max-width: 480px) {
-  .enquiry-section {
-    padding: 40px 0;
+  .contact-section {
+    margin: 10px auto;
   }
-  .enquiry-section h2 {
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-  }
-  .enquiry-form {
+  .contact-info, .contact-form {
     padding: 10px;
   }
-  .btn-custom {
-    font-size: 0.75rem;
-    padding: 5px 8px;
+  .contact-info h2, .contact-form h2 {
+    font-size: 1rem;
+  }
+  .btn-submit {
+    font-size: 0.8rem;
+    padding: 5px 10px;
   }
 }
+
 
 /*FOOTER*/
 
 /* Up to 1200px */
 @media (max-width: 1200px) {
   .footer {
-    padding: 30px 0;
-  }
-  .footer h6 {
-    font-size: 1rem;
+    padding: 18px 0;
   }
   .footer .social-icons i {
     font-size: 1.1rem;
@@ -960,67 +948,56 @@ select {
 /* Up to 992px */
 @media (max-width: 992px) {
   .footer {
-    padding: 25px 0;
-  }
-  .footer-logo img {
-    max-width: 120px;
-  }
-  .footer h6 {
-    font-size: 0.95rem;
-    margin-bottom: 10px;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-    font-size: 14px;
-  }
-  .copyrights, .links {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-}
-
-/* Up to 768px */
-@media (max-width: 768px) {
-  .footer {
-    padding: 20px 0;
-  }
-  .footer-logo img {
-    max-width: 100px;
-  }
-  .footer h6 {
-    font-size: 0.9rem;
+    padding: 16px 0;
   }
   .footer .social-icons i {
     font-size: 1rem;
     margin-right: 8px;
   }
   .footer-bottom {
-    font-size: 13px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  .copyrights {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+/* Up to 768px */
+@media (max-width: 768px) {
+  .footer {
+    padding: 14px 0;
+  }
+  .footer .social-icons i {
+    font-size: 0.95rem;
+  }
+  .footer-bottom {
+    font-size: 14px;
+    
   }
 }
 
 /* Up to 576px */
 @media (max-width: 576px) {
   .footer {
-    padding: 15px 0;
-  }
-  .footer-logo img {
-    max-width: 90px;
-  }
-  .footer h6 {
-    font-size: 0.85rem;
-    margin-bottom: 8px;
+    padding: 12px 0;
   }
   .footer .social-icons i {
     font-size: 0.9rem;
     margin-right: 6px;
   }
-  .footer a {
-    font-size: 0.85rem;
-  }
   .footer-bottom {
-    font-size: 12px;
+    font-size: 13px;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+  .copyrights {
+    text-align: center;
+    margin-bottom: 10px;
   }
 }
 
@@ -1029,24 +1006,18 @@ select {
   .footer {
     padding: 10px 0;
   }
-  .footer-logo img {
-    max-width: 80px;
-  }
-  .footer h6 {
-    font-size: 0.8rem;
-    margin-bottom: 5px;
-  }
   .footer .social-icons i {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     margin-right: 5px;
   }
-  .footer a {
-    font-size: 14px;
-  }
   .footer-bottom {
-    font-size: 11px;
-  }
-  .address{
+    font-size: 12px;
+    flex-direction: column;
     text-align: center;
+    
+  }
+  .copyrights {
+    text-align: center;
+    margin-bottom: 8px;
   }
 }
