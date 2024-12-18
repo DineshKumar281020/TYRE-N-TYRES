@@ -1,16 +1,21 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url(ASSETS/Bold-Condensed.otf);
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url(ASSETS/Medium.otf);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: "Helvetica", sans-serif;
     overflow-x: hidden;
 }
-
-section {
-  border-bottom: 1px solid #ccc;
-}
-
 
 /*NAVBAR*/
 
@@ -43,6 +48,35 @@ section {
 .item img{
   max-height: 600px;
   object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content{
+  color: #fff;
+  text-align: center;
+  padding: 300px;
+  
+    }
+
+
+.content h2{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.content p{
+  font-size: 24px;
 }
 
 /*ABOUT-US*/
@@ -117,7 +151,7 @@ section {
   font-size: 40px;
   font-weight: bold;
   color: #212529;
-  margin-bottom: 15px;
+  
 }
 .services-title p {
   font-size: 1rem;
@@ -170,7 +204,7 @@ section {
   font-size: 40px;
   font-weight: bold;
   color: #212529;
-  margin-bottom: 15px;
+  
 }
 
 .tyre-title p {
@@ -223,7 +257,7 @@ select {
 .brands-title h2 {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 15px;
+  
   color: #212529;
 }
 .brands-title p {
@@ -234,10 +268,10 @@ select {
 .brand-logo img {
   width: 100%;
   max-width: 250px;
-  height: 100px;
+  height: 120px;
   margin: 0 auto;
   transition: transform 0.3s ease-in-out;
-  object-fit: contain;
+  
 }
 .brand-logo img:hover {
   transform: scale(1.1);
@@ -336,10 +370,16 @@ select {
 
 .company{
   margin: 0;
+  padding-left: 40px;
 }
 
 .copyrights{
   text-align: left;
+  padding-right: 40px;
+}
+
+.social-icons{
+  padding-left: 75px;
 }
 
 
