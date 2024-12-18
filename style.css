@@ -20,12 +20,18 @@ body{
 /*NAVBAR*/
 
 .navbar {
-    position: sticky;
+    position: fixed;
     top: 0; 
     z-index: 1000; 
     background-color: #ffffff; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     padding: 10px 15px; 
+    width: 100%;
+}
+
+.nav{
+  position: relative;
+  height: 109px;
 }
 
 .navbar-nav{
@@ -214,18 +220,24 @@ body{
 
 .tyre-section table {
   margin: auto;
-  border-collapse: collapse;
   width: 90%;
   text-align: center;
+  border-collapse: separate;
+  border: solid #f2f2f2 1px;
+    border-radius: 20px;
 }
 .tyre-section th,
 td {
-  border: 1px solid #ddd;
   padding: 10px;
 }
 .tyre-section th {
   background-color: #f2f2f2;
 }
+
+.tyre-section td {
+  border-right:1px solid #f2f2f2;
+}
+
 .tyre-section input[type="text"],
 select {
   padding: 5px;
@@ -245,6 +257,11 @@ select {
 .tyre-section .tyre-button:hover{
   background-color: #000;
   color: #fff;
+}
+
+
+.upsize-top-line{
+  border-top: 1px solid #f2f2f2;
 }
 
 /*BRANDS*/
@@ -282,7 +299,9 @@ select {
 .contact-section {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
   margin: 40px auto;
   width: 100%;
 }
@@ -294,9 +313,16 @@ select {
   border-radius: 8px 0 0 8px;
 }
 
-.contact-info h2 {
+.contact-info h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-info h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .contact-info i {

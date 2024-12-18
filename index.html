@@ -19,8 +19,9 @@
   <!--NAVBAR-->
 
 
-
+  <div class="nav">
   <nav class="navbar navbar-expand-lg navbar-light">
+    
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><img src="ASSETS/logo.jpg" alt="" class="d-inline-block align-text-top"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -51,6 +52,7 @@
 
       </div>
     </div>
+  </div>
   </nav>
   <!--BANNER-->
   <main id="main-site">
@@ -104,7 +106,7 @@
               <h2>KEEP THE GOOD TIMES ROLL IN!!</h2>
               <p>Leading Tyre Dealers in Chennai</p>
             </div>
-          </div>i
+          </div>
         </div>
       </div>
     </section>
@@ -226,8 +228,9 @@
       </div>
       <form name="wheelsizes" action="tyre_bible.html">
 
-        </table>
+        
         <table border=0 align="CENTER">
+          <tbody>
           <tr>
             <th align=CENTER>Current wheel/tyre</th>
             <th align=CENTER>New wheel/tyre</th>
@@ -385,7 +388,7 @@
           </tr>
 
           <tr>
-            <td colspan=2 align=CENTER>
+            <td colspan=2 align=CENTER class="upsize-top-line">
               <img border="0" src="ASSETS/down-arrow.avif" width="94" height="39">
             </td>
           </tr>
@@ -428,7 +431,7 @@
             </td>
           </tr>
 
-
+        </tbody>
         </table>
     </div>
   </section>
@@ -479,28 +482,31 @@
 
   <!--ENQUIRY AND CONTACT US-->
 
-  <section class="container contact-section" id="contacts">
+  <section class="container" id="contact">
+    <div class="contact-section">
     <div class="row g-0">
       <!-- Contact Information -->
       <div class="col-md-5 contact-info">
-        <h2>Tyre N Tyres</h2>
+        <h1>Contact Us</h1>
+        <h4>Tyre N Tyres</h4>
         <p><i class="fas fa-map-marker-alt"></i> No.618, Anna Salai, Next to KTM Showroom, Chennai, India 600006 </p>
         <p><i class="fas fa-phone"></i> +91 98409 20870</p>
-        <p><i class="fas fa-envelope"></i> info@example.com</p>
+        <p><i class="fas fa-envelope"></i> deepak@tyrestore.in</p>
         <p><i class="fas fa-globe"></i> www.example.com</p>
       </div>
       <!-- Contact Form -->
       <div class="col-md-7 contact-form" id="contacts">
         <h2>Get in Touch</h2>
         <form>
-          <input type="text" class="form-control" required>
-          <input type="email" class="form-control" required>
-          <input type="text" class="form-control" required>
-          <textarea class="form-control" rows="5" required></textarea>
+          <input type="text" class="form-control" placeholder="Enter Name" required>
+          <input type="email" class="form-control" placeholder="Enter E-Mail" required>
+          <input type="text" class="form-control" placeholder="Enter Subject" required>
+          <textarea class="form-control" rows="5" placeholder="Enter Message" required></textarea>
           <button type="submit" class="btn btn-submit">Send Message</button>
         </form>
       </div>
     </div>
+  </div>
   </section>
 
   <!--FOOTER-->
@@ -514,7 +520,7 @@
       <div class="social-icons">
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
       </div>
       <p class="copyrights">&copy; <span id="currentYear"></span> Tyre N Tyres. All rights reserved.</p>
     </div>
