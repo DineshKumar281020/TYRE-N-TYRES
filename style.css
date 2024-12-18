@@ -41,7 +41,7 @@ section {
 /*BANNER*/
 
 .item img{
-  max-height: 800px;
+  max-height: 600px;
   object-fit: cover;
 }
 
