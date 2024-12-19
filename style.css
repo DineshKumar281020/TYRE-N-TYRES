@@ -232,7 +232,7 @@ td {
 }
 .tyre-section th {
   background-color: #f2f2f2;
-  border-radius: 20px;
+  
 }
 
 /* .tyre-section td {
@@ -263,6 +263,14 @@ select {
 
 .upsize-top-line{
   border-top: 1px solid grey;
+}
+
+.upsize-border-left{
+  border-top-left-radius: 20px;
+}
+
+.upsize-border-right{
+  border-top-right-radius: 20px;
 }
 
 /*BRANDS*/
@@ -1034,7 +1042,7 @@ select {
 @media (max-width: 1200px) {
   .contact-section {
     margin: 30px auto;
-    padding: 30px 0;
+    
   }
   .contact-info {
     padding: 30px;
@@ -1057,7 +1065,7 @@ select {
 @media (max-width: 992px) {
   .contact-section {
     margin: 25px auto;
-    padding: 25px 0;
+    
   }
   .contact-info {
     padding: 25px;
@@ -1080,7 +1088,7 @@ select {
 @media (max-width: 768px) {
   .contact-section {
     margin: 20px auto;
-    padding: 20px 0;
+    
   }
   .contact-info {
     padding: 20px;
@@ -1103,7 +1111,6 @@ select {
 @media (max-width: 576px) {
   .contact-section {
     margin: 15px auto;
-    padding: 15px 0;
   }
   .contact-info {
     padding: 15px;
@@ -1130,7 +1137,7 @@ select {
 @media (max-width: 480px) {
   .contact-section {
     margin: 10px auto;
-    padding: 10px 0;
+    
   }
   .contact-info {
     padding: 10px;
