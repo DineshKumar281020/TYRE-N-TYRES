@@ -1118,6 +1118,9 @@ select {
   .contact-form h2 {
     font-size: 1.6rem;
   }
+  .address{
+    padding-left: 0;
+  }
 }
 
 /* Up to 768px */
@@ -1175,6 +1178,9 @@ select {
 
   .contact-section .contact-form {
     order: 1; /* Reset the order for desktop view */
+  }
+  .address{
+    padding-left: 27px;
   }
 }
 
